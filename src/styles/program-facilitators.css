@@ -44,6 +44,9 @@
 .facilitator-image-wrapper.green {
   border-color: var(--color-green);
 }
+.facilitator-image-wrapper.white {
+  border-color: white;
+}
 
 .facilitator-image {
   width: 100%;
