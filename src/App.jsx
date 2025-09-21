@@ -71,7 +71,7 @@ function Home() {
               Get ready for hands-on learning with Google Cloud! Our official labs will help you earn Skill Badges and truly level up with your campus community. It's a focused start to boost your cloud skills.
             </p>
             <div className="cta">
-              <a className="btn primary disabled" href="#" onClick={(e) => e.preventDefault()}>Registrations Opening Soon</a>
+              <a className="btn primary" href="https://forms.gle/QagpTebJMepCFYki8" target="_blank" rel="noopener noreferrer">Register Now</a>
             </div>
           </div>
           <HeroGraphic />
