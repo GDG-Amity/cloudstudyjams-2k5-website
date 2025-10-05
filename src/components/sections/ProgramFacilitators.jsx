@@ -4,13 +4,13 @@ const facilitatorsData = [
   {
     name: "Rajat Rajput",
     designation: "Organizer",
-    imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQG_kQOJ-ust-g/profile-displayphoto-crop_800_800/B56ZiNP6C9G0AI-/0/1754716416398?e=1759363200&v=beta&t=MdON6C-_lPfL6ZiWZYUUtsu-EppT7wlZmNQ9W14Um98",
+    imageUrl: "/rajat-rajput.jpg",
     color: "white",
   },
   {
     name: "Kanchan Rai",
     designation: "Organizer",
-    imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQETlJy2HqgUXA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723292855560?e=1759363200&v=beta&t=l_j_FWMA4QtsLp26UWe7LBQojBKvF9yUYxp_L_LDzcE",
+    imageUrl: "/kanchan-rai.jpg",
     color: "red",
   },
 ];

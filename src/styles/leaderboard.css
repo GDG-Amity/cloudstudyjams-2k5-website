@@ -1,0 +1,57 @@
+.leaderboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  padding-top: 120px; /* Add padding to avoid overlap with nav */
+}
+
+.leaderboard-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.leaderboard-subtitle {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 48px;
+}
+
+.leaderboard-table-container {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 48px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 16px;
+  text-align: left;
+}
+
+.leaderboard-table thead {
+  background-color: var(--bg-alt-2);
+}
+
+.leaderboard-table th {
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.leaderboard-table tbody tr:nth-child(even) {
+  background-color: var(--bg-alt-2);
+}
+
+.leaderboard-table tbody tr:hover {
+  background-color: var(--border);
+}
