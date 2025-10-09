@@ -20,7 +20,8 @@
 
 .leaderboard-table-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-top: 48px;
   background: var(--bg-alt);
   border: 1px solid var(--border);
