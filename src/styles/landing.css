@@ -117,7 +117,7 @@ body { margin: 0; background: var(--bg); color: var(--fg); font-family: 'Open Sa
   filter: grayscale(100%);
 }
 
-.foot { padding: 18px 20px; border-top: 1px solid var(--border); color: var(--muted); text-align: center; }
+.foot { padding: 18px 20px; border-top: 1px solid var(--border); color: var(--muted); text-align: center; margin-top: 32px; }
 
 @keyframes gradientShift {
   0%, 100% { background-position: 0% 50%; }

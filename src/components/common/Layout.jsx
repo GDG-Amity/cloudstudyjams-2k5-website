@@ -1,23 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import Preloader from './Preloader';
 
 const Layout = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000); // 2 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="landing" id="top">
-      {isLoading && <Preloader />}
       <nav className="nav">
         <motion.a href="/#top" className="brand" initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <span className="brand-dots" aria-hidden>
@@ -29,12 +18,8 @@ const Layout = ({ children }) => {
           <span>GDG Amity University</span>
         </motion.a>
         <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <a href="/#about" onClick={() => setIsMenuOpen(false)}>About</a>
-          <a href="/#timeline" onClick={() => setIsMenuOpen(false)}>Timeline</a>
-          <a href="/#syllabus" onClick={() => setIsMenuOpen(false)}>Syllabus</a>
-          <Link to="/leaderboard" onClick={() => setIsMenuOpen(false)}>Leaderboard</Link>
-          <a href="/#facilitator-rewards" onClick={() => setIsMenuOpen(false)}>Rewards</a>
-          <a href="/#program-facilitators" onClick={() => setIsMenuOpen(false)}>Facilitators</a>
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>Final Results</Link>
+          <Link to="/leaderboard" onClick={() => setIsMenuOpen(false)}>Full Leaderboard</Link>
         </div>
         <button className="menu-btn" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
